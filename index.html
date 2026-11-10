@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Mack Lab 3D - Catálogo Digital</title>
+  <style>
+    :root {
+      --accent-color: #f97316;
+      --accent-hover: #ea580c;
+      --accent-rgb: 249, 115, 22;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif; background: #0b0c0e; color: #f3f4f6; padding-top: 120px; }
+
+    /* Cabeçalho Fixo */
+    .top-navbar { position: fixed; top: 0; left: 0; right: 0; height: 110px; background: rgba(11, 12, 14, 0.95); backdrop-filter: blur(12px); border-bottom: 2px solid #22262f; z-index: 1000; display: flex; align-items: center; justify-content: center; padding: 0 40px; cursor: pointer; }
+    .nav-inner-container { width: 100%; max-width: 1300px; display: flex; align-items: center; justify-content: space-between; position: relative; }
+    .nav-center-group { display: flex; align-items: center; gap: 20px; position: absolute; left: 50%; transform: translateX(-50%); }
+    
+    .brand-text-nav {
+      font-size: 56px;
+      font-weight: 900;
+      font-style: italic;
+      font-family: 'Impact', 'Arial Black', sans-serif;
+      background: linear-gradient(180deg, #fff200 0%, #ffe600 70%, #ff3300 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      text-shadow: 0px 3px 0px #cc0000;
+      filter: drop-shadow(0px 0px 10px rgba(255, 242, 0, 0.8));
+      letter-spacing: 0.5px;
+      line-height: 1;
+      transition: transform 0.25s ease, filter 0.25s ease;
+    }
+
+    .brand-text-nav:hover {
+      transform: scale(1.06) translateY(-2px);
+      filter: drop-shadow(0px 0px 16px rgba(255, 242, 0, 1));
+    }
+    
+    .nav-contacts { display: flex; align-items: center; gap: 10px; }
+    .btn-social { display: flex; align-items: center; justify-content: center; width: 42px; height: 42px; border-radius: 50%; transition: transform 0.2s ease, box-shadow 0.2s ease; text-decoration: none; }
+    .btn-social:hover { transform: scale(1.1); box-shadow: 0 0 12px rgba(255, 255, 255, 0.3); }
+    .btn-social svg { width: 22px; height: 22px; fill: #ffffff; }
+
+    .btn-insta { background: linear-gradient(45deg, #f09433 0%, #e6683c 25%, #dc2743 50%, #cc2366 75%, #bc1888 100%); }
+    .btn-wsp { background: #25d366; }
+
+    .theme-select-container { display: flex; align-items: center; gap: 8px; background: #14161b; border: 1px solid #22262f; padding: 6px 14px; border-radius: 20px; margin-left: auto; }
+    .theme-dot { width: 10px; height: 10px; border-radius: 50%; background: var(--accent-color); display: inline-block; }
+    .theme-select-container select { background: transparent; border: none; color: #ffffff; font-size: 13px; font-weight: 700; outline: none; cursor: pointer; }
+
+    .main-container { padding: 20px 40px; }
+    header { max-width: 1300px; margin: 0 auto 30px auto; display: flex; justify-content: space-between; align-items: center; gap: 30px; }
+    .header-title-box { display: flex; align-items: center; gap: 30px; max-width: 900px; }
+    .header-logo-hero { height: 130px; width: auto; object-fit: contain; flex-shrink: 0; }
+    .header-text-content { display: flex; flex-direction: column; }
+    .tag-subtitle { color: var(--accent-color); font-size: 11px; font-weight: 700; letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 8px; }
+    h1 { font-size: 36px; font-weight: 800; color: #ffffff; line-height: 1.1; margin-bottom: 12px; }
+    .subtext { color: #9ca3af; font-size: 14px; line-height: 1.4; }
+    
+    .counter-box { text-align: right; background: #14161b; border: 1px solid #22262f; padding: 15px 25px; border-radius: 12px; flex-shrink: 0; }
+    .counter-num { font-size: 32px; font-weight: 800; color: #ffffff; line-height: 1; }
+    .counter-label { font-size: 11px; color: #6b7280; font-weight: 600; text-transform: uppercase; margin-top: 4px; }
+
+    .section-container { max-width: 1300px; margin: 0 auto 40px auto; }
+    .section-header { display: flex; justify-content: space-between; align-items: center; margin-bottom: 15px; }
+    .section-title { font-size: 20px; font-weight: 800; color: #ffffff; }
+
+    .recent-carousel { display: flex; gap: 16px; overflow-x: auto; padding-bottom: 15px; scroll-behavior: smooth; }
+    .recent-carousel::-webkit-scrollbar { height: 6px; }
+    .recent-carousel::-webkit-scrollbar-thumb { background: #22262f; border-radius: 4px; }
+
+    .recent-card { 
+      min-width: 220px; 
+      max-width: 220px; 
+      background: #14161b; 
+      border: 1px solid #22262f; 
+      border-radius: 12px; 
+      overflow: hidden; 
+      cursor: pointer; 
+      color: inherit; 
+      flex-shrink: 0; 
+      display: flex;
+      flex-direction: column;
+      transition: transform 0.2s ease, border-color 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .recent-card img { width: 100%; height: 100%; object-fit: contain; }
+    .recent-card:hover { transform: translateY(-5px); border-color: var(--accent-color); box-shadow: 0 6px 15px rgba(0, 0, 0, 0.5); }
+    
+    .filter-bar { background: #14161b; border: 1px solid #22262f; border-radius: 12px; padding: 16px; display: flex; gap: 15px; flex-wrap: wrap; margin-bottom: 25px; }
+    .filter-group { display: flex; flex-direction: column; gap: 6px; }
+    .filter-group label { font-size: 10px; font-weight: 700; color: #6b7280; text-transform: uppercase; }
+    .filter-group.category-group { min-width: 320px; }
+
+    .category-select-wrapper { display: flex; align-items: center; gap: 8px; background: #0b0c0e; border: 1px solid #22262f; border-radius: 6px; padding-right: 8px; }
+    .category-select-wrapper select { border: none !important; flex-grow: 1; background: transparent; color: #ffffff; padding: 10px 14px; font-size: 13px; outline: none; }
+
+    .category-count-badge { background: var(--accent-color); color: #ffffff; font-size: 11px; font-weight: 800; padding: 4px 10px; border-radius: 12px; line-height: 1; white-space: nowrap; box-shadow: 0 0 8px rgba(var(--accent-rgb), 0.4); }
+
+    input[type="text"] { background: #0b0c0e; border: 1px solid #22262f; color: #ffffff; padding: 10px 14px; border-radius: 6px; font-size: 13px; outline: none; }
+    input[type="text"]:focus { border-color: var(--accent-color); }
+
+    .grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); gap: 18px; }
+    .card { background: #14161b; border: 1px solid #22262f; border-radius: 12px; overflow: hidden; cursor: pointer; color: inherit; transition: all 0.2s ease; display: flex; flex-direction: column; }
+    .card:hover { transform: translateY(-4px); border-color: var(--accent-color); }
+    
+    .img-container { width: 100%; height: 180px; background: #0d0e11; position: relative; display: flex; align-items: center; justify-content: center; }
+    .card img { width: 100%; height: 100%; object-fit: cover; }
+    
+    .no-image-placeholder { display: flex; flex-direction: column; align-items: center; justify-content: center; width: 100%; height: 100%; background: linear-gradient(135deg, #14161b 0%, #1e222b 100%); }
+    .no-image-icon { font-size: 28px; margin-bottom: 6px; }
+    .no-image-text { font-size: 11px; font-weight: 800; color: var(--accent-color); letter-spacing: 1px; border: 1px solid var(--accent-color); padding: 3px 8px; border-radius: 4px; }
+
+    .info { padding: 12px; flex-grow: 1; display: flex; flex-direction: column; justify-content: space-between; }
+    .cat-tag { font-size: 10px; font-weight: 700; background: #22262f; color: #9ca3af; padding: 3px 8px; border-radius: 4px; text-transform: uppercase; display: inline-block; margin-bottom: 6px; width: fit-content; }
+    .title { font-size: 13px; font-weight: 600; color: #e5e7eb; margin-bottom: 10px; line-height: 1.3; }
+    
+    .card-footer { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid #22262f; padding-top: 8px; margin-top: auto; }
+    .format-badge { font-size: 9px; font-weight: 700; color: #6b7280; background: #0d0e11; padding: 2px 5px; border-radius: 3px; border: 1px solid #22262f; }
+    .btn-view { font-size: 11px; font-weight: 600; color: var(--accent-color); }
+
+    .loading { text-align: center; color: #6b7280; margin-top: 60px; font-size: 16px; }
+
+    /* Modal */
+    .modal-overlay { position: fixed; top: 0; left: 0; right: 0; bottom: 0; background: rgba(0, 0, 0, 0.85); backdrop-filter: blur(8px); display: none; justify-content: center; align-items: center; z-index: 2000; padding: 20px; }
+    .modal-content { background: #14161b; border: 1px solid #22262f; border-radius: 16px; max-width: 900px; width: 100%; display: flex; overflow: hidden; position: relative; box-shadow: 0 20px 40px rgba(0,0,0,0.6); }
+    .modal-close { position: absolute; top: 15px; right: 20px; font-size: 24px; color: #9ca3af; cursor: pointer; z-index: 10; font-weight: bold; }
+    .modal-close:hover { color: #fff; }
+    
+    .modal-img-container { width: 55%; background: #0b0c0e; display: flex; align-items: center; justify-content: center; min-height: 400px; max-height: 550px; }
+    .modal-img-container img { width: 100%; height: 100%; object-fit: contain; }
+    
+    .modal-details { width: 45%; padding: 30px; display: flex; flex-direction: column; justify-content: space-between; }
+    .modal-title { font-size: 22px; font-weight: 800; color: #fff; margin-top: 10px; margin-bottom: 15px; line-height: 1.2; }
+    .modal-badge-group { display: flex; gap: 8px; margin-bottom: 20px; }
+    .modal-download-btn { background: var(--accent-color); color: #fff; font-size: 15px; font-weight: 700; text-align: center; padding: 14px; border-radius: 8px; text-decoration: none; transition: background 0.2s; display: block; margin-top: 15px; }
+    .modal-download-btn:hover { background: var(--accent-hover); }
+
+    .modal-nav-container { display: flex; gap: 10px; margin-top: 12px; }
+    .modal-nav-btn { flex: 1; background: #0b0c0e; border: 1px solid #22262f; color: #f3f4f6; font-size: 13px; font-weight: 700; padding: 10px; border-radius: 8px; cursor: pointer; transition: all 0.2s ease; display: flex; align-items: center; justify-content: center; gap: 6px; }
+    .modal-nav-btn:hover { background: #22262f; border-color: var(--accent-color); color: var(--accent-color); }
+
+    @media (max-width: 900px) {
+      .nav-inner-container { flex-direction: column; gap: 15px; justify-content: center; }
+      .nav-center-group { position: static; transform: none; }
+      .theme-select-container { margin-left: 0; }
+      .top-navbar { height: auto; padding: 15px 20px; }
+      body { padding-top: 140px; }
+    }
+
+    @media (max-width: 768px) {
+      .header-title-box { flex-direction: column; align-items: flex-start; gap: 15px; }
+      .header-logo-hero { height: 90px; }
+      header { flex-direction: column; align-items: flex-start; }
+      .nav-center-group { gap: 10px; flex-wrap: wrap; justify-content: center; }
+      .btn-social { width: 36px; height: 36px; }
+      .btn-social svg { width: 18px; height: 18px; }
+      .brand-text-nav { font-size: 32px; }
+      .filter-group.category-group { min-width: 100%; }
+      .modal-content { flex-direction: column; max-height: 90vh; overflow-y: auto; }
+      .modal-img-container, .modal-details { width: 100%; }
+      .modal-img-container { min-height: 250px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="top-navbar" onclick="scrollToTop()">
+    <div class="nav-inner-container">
+      <div class="nav-center-group">
+        <div class="brand-text-nav">Mack Lab 3D</div>
+        <div class="nav-contacts" onclick="event.stopPropagation();">
+          <a href="https://instagram.com/macklab3d" target="_blank" class="btn-social btn-insta" title="Instagram">
+            <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+          </a>
+          <a href="https://wa.me/5561993019631" target="_blank" class="btn-social btn-wsp" title="WhatsApp">
+            <svg viewBox="0 0 24 24"><path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <div class="theme-select-container" onclick="event.stopPropagation();">
+        <span class="theme-dot"></span>
+        <select id="theme-selector" onchange="changeTheme(this.value)">
+          <option value="orange">Laranja</option>
+          <option value="blue">Azul</option>
+          <option value="purple">Roxo</option>
+          <option value="cyan">Ciano</option>
+          <option value="emerald">Esmeralda</option>
+        </select>
+      </div>
+    </div>
+  </nav>
+
+  <div class="main-container">
+    <header>
+      <div class="header-title-box">
+        <div id="logo-container-hero"></div>
+        <div class="header-text-content">
+          <div class="tag-subtitle">Acervo Digital Contemporâneo</div>
+          <h1>Encontre a próxima ideia<br>para imprimir.</h1>
+          <p class="subtext">Explore modelos, personagens, peças e projetos organizados para você chegar ao arquivo certo sem perder o ritmo.</p>
+        </div>
+      </div>
+      <div class="counter-box">
+        <div class="counter-num" id="total-count">0</div>
+        <div class="counter-label">Modelos no acervo</div>
+      </div>
+    </header>
+
+    <div class="section-container">
+      <div class="section-header">
+        <div>
+          <div class="tag-subtitle">Recém-Adicionados</div>
+          <div class="section-title">Chegaram agora</div>
+        </div>
+      </div>
+      <div class="recent-carousel" id="recent-grid"></div>
+    </div>
+
+    <div class="section-container">
+      <div class="filter-bar">
+        <div class="filter-group" style="flex-grow: 1;">
+          <label>Buscar</label>
+          <input type="text" id="search" placeholder="Buscar por nome..." onkeyup="applyFilters()">
+        </div>
+        <div class="filter-group category-group">
+          <label>Categoria</label>
+          <div class="category-select-wrapper">
+            <select id="category-filter" onchange="applyFilters()">
+              <option value="ALL">TODAS AS CATEGORIAS</option>
+            </select>
+            <span id="category-count" class="category-count-badge">0</span>
+          </div>
+        </div>
+      </div>
+
+      <div id="loading" class="loading">Carregando acervo do Google Drive...</div>
+      <div id="grid" class="grid"></div>
+    </div>
+  </div>
+
+  <div class="modal-overlay" id="model-modal" onclick="closeModal()">
+    <div class="modal-content" onclick="event.stopPropagation();">
+      <span class="modal-close" onclick="closeModal()">&times;</span>
+      <div class="modal-img-container" id="modal-img-box"></div>
+      <div class="modal-details">
+        <div>
+          <div class="modal-badge-group">
+            <span class="cat-tag" id="modal-category">CATEGORIA</span>
+            <span class="format-badge" id="modal-format">FORMATO</span>
+          </div>
+          <div class="modal-title" id="modal-title">Nome do Modelo</div>
+        </div>
+        <div>
+          <a href="#" target="_blank" class="modal-download-btn" id="modal-download-link">⬇️ Baixar Modelo</a>
+          <div class="modal-nav-container">
+            <button class="modal-nav-btn" onclick="navigateModal(-1)">◀ Anterior</button>
+            <button class="modal-nav-btn" onclick="navigateModal(1)">Próximo ▶</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const APPS_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbw0Pruq1PyF907T9jijwnaD_vXKX4xJj_9SWHaXQDvygZvmD1kOZjTmPUcMG8CxSgmVtQ/exec';
+
+    let catalogData = [];
+    let filteredData = [];
+    let itemsPerBatch = 24;
+    let currentIndex = 0;
+    let isLoadingMore = false;
+    let currentModalFilteredIndex = -1;
+
+    const themes = {
+      orange: { accent: '#f97316', hover: '#ea580c', rgb: '249, 115, 22' },
+      blue: { accent: '#3b82f6', hover: '#2563eb', rgb: '59, 130, 246' },
+      purple: { accent: '#a855f7', hover: '#9333ea', rgb: '168, 85, 247' },
+      cyan: { accent: '#06b6d4', hover: '#0891b2', rgb: '6, 182, 212' },
+      emerald: { accent: '#10b981', hover: '#059669', rgb: '16, 185, 129' }
+    };
+
+    function changeTheme(themeName) {
+      const theme = themes[themeName] || themes.orange;
+      document.documentElement.style.setProperty('--accent-color', theme.accent);
+      document.documentElement.style.setProperty('--accent-hover', theme.hover);
+      document.documentElement.style.setProperty('--accent-rgb', theme.rgb);
+    }
+
+    function scrollToTop() {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+    }
+
+    fetch(APPS_SCRIPT_URL)
+      .then(response => response.json())
+      .then(response => {
+        catalogData = response.catalog;
+        filteredData = [...catalogData];
+        
+        if (response.logoUrl) {
+          document.getElementById('logo-container-hero').innerHTML = `<img src="${response.logoUrl}" class="header-logo-hero" alt="Mack Lab 3D">`;
+        }
+
+        document.getElementById('loading').style.display = 'none';
+        document.getElementById('total-count').innerText = catalogData.length;
+        
+        populateCategories(catalogData);
+
+        const recentItems = [...catalogData].sort((a, b) => b.date - a.date).slice(0, 8);
+        renderRecent(recentItems);
+
+        resetAndRenderGrid();
+
+        window.addEventListener('scroll', handleInfiniteScroll);
+      })
+      .catch(err => {
+        console.error("Erro ao carregar os dados:", err);
+        document.getElementById('loading').innerText = "Erro ao carregar o acervo do Google Drive.";
+      });
+
+    function populateCategories(items) {
+      const categories = [...new Set(items.map(i => i.category))].sort((a, b) => a.localeCompare(b, 'pt-BR'));
+      const select = document.getElementById('category-filter');
+      select.innerHTML = '<option value="ALL">TODAS AS CATEGORIAS</option>';
+      
+      categories.forEach(cat => {
+        select.innerHTML += `<option value="${cat}">${cat}</option>`;
+      });
+
+      document.getElementById('category-count').innerText = items.length;
+    }
+
+    function getImageHTML(item) {
+      if (item.image) {
+        return `<img src="${item.image}" loading="lazy" alt="${item.title}">`;
+      } else {
+        return `
+          <div class="no-image-placeholder">
+            <div class="no-image-icon">📦</div>
+            <div class="no-image-text">${item.format}</div>
+          </div>
+        `;
+      }
+    }
+
+    function openModal(originalIndex) {
+      const targetItem = catalogData[originalIndex];
+      currentModalFilteredIndex = filteredData.findIndex(item => item === targetItem);
+
+      if (currentModalFilteredIndex === -1) {
+        currentModalFilteredIndex = 0;
+      }
+
+      updateModalContent();
+      document.getElementById('model-modal').style.display = 'flex';
+    }
+
+    function updateModalContent() {
+      if (currentModalFilteredIndex < 0 || currentModalFilteredIndex >= filteredData.length) return;
+
+      const item = filteredData[currentModalFilteredIndex];
+      document.getElementById('modal-title').innerText = item.title;
+      document.getElementById('modal-category').innerText = item.category;
+      document.getElementById('modal-format').innerText = item.format;
+      document.getElementById('modal-download-link').href = item.link;
+
+      const imgBox = document.getElementById('modal-img-box');
+      imgBox.innerHTML = getImageHTML(item);
+    }
+
+    function navigateModal(direction) {
+      if (filteredData.length === 0) return;
+
+      currentModalFilteredIndex += direction;
+
+      if (currentModalFilteredIndex < 0) {
+        currentModalFilteredIndex = filteredData.length - 1;
+      } else if (currentModalFilteredIndex >= filteredData.length) {
+        currentModalFilteredIndex = 0;
+      }
+
+      updateModalContent();
+    }
+
+    function closeModal() {
+      document.getElementById('model-modal').style.display = 'none';
+    }
+
+    function renderRecent(items) {
+      const container = document.getElementById('recent-grid');
+      container.innerHTML = '';
+      items.forEach((item) => {
+        const originalIndex = catalogData.indexOf(item);
+        container.innerHTML += `
+          <div class="recent-card" onclick="openModal(${originalIndex})">
+            <div class="img-container" style="height: 180px;">
+              ${getImageHTML(item)}
+            </div>
+            <div class="info">
+              <div>
+                <span class="cat-tag">${item.category}</span>
+                <div class="title" style="font-size: 13px;">${item.title}</div>
+              </div>
+              <div class="card-footer">
+                <span class="format-badge">${item.format}</span>
+                <span class="btn-view">Ver detalhes ➔</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+    }
+
+    function resetAndRenderGrid() {
+      const targetGrid = document.getElementById('grid');
+      targetGrid.innerHTML = '';
+      currentIndex = 0;
+      loadNextBatch();
+    }
+
+    function loadNextBatch() {
+      if (currentIndex >= filteredData.length) return;
+
+      const targetGrid = document.getElementById('grid');
+      const nextBatch = filteredData.slice(currentIndex, currentIndex + itemsPerBatch);
+
+      nextBatch.forEach((item) => {
+        const originalIndex = catalogData.indexOf(item);
+        targetGrid.innerHTML += `
+          <div class="card" onclick="openModal(${originalIndex})">
+            <div class="img-container">
+              ${getImageHTML(item)}
+            </div>
+            <div class="info">
+              <div>
+                <span class="cat-tag">${item.category}</span>
+                <div class="title">${item.title}</div>
+              </div>
+              <div class="card-footer">
+                <span class="format-badge">${item.format}</span>
+                <span class="btn-view">Ver detalhes ➔</span>
+              </div>
+            </div>
+          </div>
+        `;
+      });
+
+      currentIndex += itemsPerBatch;
+      isLoadingMore = false;
+    }
+
+    function handleInfiniteScroll() {
+      if (isLoadingMore) return;
+
+      const scrollPosition = window.innerHeight + window.scrollY;
+      const bodyHeight = document.body.offsetHeight;
+
+      if (scrollPosition >= bodyHeight - 300) {
+        isLoadingMore = true;
+        loadNextBatch();
+      }
+    }
+
+    function applyFilters() {
+      const query = document.getElementById('search').value.toLowerCase();
+      const selectedCat = document.getElementById('category-filter').value;
+
+      filteredData = catalogData.filter(item => {
+        const matchesSearch = item.title.toLowerCase().includes(query);
+        const matchesCat = selectedCat === "ALL" || item.category === selectedCat;
+        return matchesSearch && matchesCat;
+      });
+
+      document.getElementById('category-count').innerText = filteredData.length;
+
+      resetAndRenderGrid();
+    }
+
+    document.addEventListener('keydown', function(event) {
+      const modal = document.getElementById('model-modal');
+      if (modal.style.display === 'flex') {
+        if (event.key === 'ArrowLeft') {
+          navigateModal(-1);
+        } else if (event.key === 'ArrowRight') {
+          navigateModal(1);
+        } else if (event.key === 'Escape') {
+          closeModal();
+        }
+      }
+    });
+  </script>
+</body>
+</html>
