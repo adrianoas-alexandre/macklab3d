@@ -296,7 +296,7 @@
       window.scrollTo({ top: 0, behavior: 'smooth' });
     }
 
-    fetch(APPS_SCRIPT_URL)
+    fetch('./catalogo.json')
       .then(response => response.json())
       .then(response => {
         catalogData = response.catalog;
