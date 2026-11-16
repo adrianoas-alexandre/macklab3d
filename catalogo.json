@@ -217,6 +217,94 @@
       "date": 1793378797077
     },
     {
+      "title": "Vincent Vega",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1XfN51gFLOVImF4k0G21cJcuQqerAYuSO",
+      "link": "https://drive.google.com/uc?id=1wkgPHNY8u0O8cRoSuTgh4BqgTSdI3F-o&export=download",
+      "format": "ZIP",
+      "date": 1793111721203
+    },
+    {
+      "title": "Blade",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=15oaayDHQPkapNjfLhk6yKeqhIud54RJA",
+      "link": "https://drive.google.com/uc?id=1QARcYx4Yj85UuJgCXs0ocGhLX7X9_qpD&export=download",
+      "format": "ZIP",
+      "date": 1793111734686
+    },
+    {
+      "title": "Sam",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1EM5yx6PQEQlVHVHa1w_IitzaINczsQ8j",
+      "link": "https://drive.google.com/uc?id=1W9PlMc07HX5EjYSP6-mOgaG78XjIDShl&export=download",
+      "format": "ZIP",
+      "date": 1792955054782
+    },
+    {
+      "title": "Hannibal Lecter",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1wnd41QoBubcYB5ew76uZ2jk00k50VX0q",
+      "link": "https://drive.google.com/uc?id=14VWKit6dRyuQtkxPz1_V5q4eDsgIeY-D&export=download",
+      "format": "ZIP",
+      "date": 1792954921770
+    },
+    {
+      "title": "venom-urban-tinnik3d-stl3dbr",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1EXZ-7o2e3cW-ia5vulG4yJes_n9aqU4U",
+      "link": "https://drive.google.com/uc?id=1mxqwglOa0synUxlhTbUmbI-uqr1La9DK&export=download",
+      "format": "ZIP",
+      "date": 1792777608904
+    },
+    {
+      "title": "CHUCKY",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1r4biY4ZVHQP3eOUWtMq2HKIworyQgY2U",
+      "link": "https://drive.google.com/uc?id=17TW-fe5a6xRlGpKKBEDisO8LZCaEAjka&export=download",
+      "format": "ZIP",
+      "date": 1792496665731
+    },
+    {
+      "title": "Ghostface by tinnik3d",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1K3O697a8B47zvcrBozIU99beiUxa7fu7",
+      "link": "https://drive.google.com/uc?id=1PzbP-UL14MbaJmIxU6JwlKKsVXgzDbft&export=download",
+      "format": "ZIP",
+      "date": 1792100128673
+    },
+    {
+      "title": "leatherface-by-tinnik3d-stl3dbr",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1s_c9uW60NzTBzEXYDOPbzkn3ddkCFt7q",
+      "link": "https://drive.google.com/uc?id=1kWGyfD5SZBXSj1S16-bUorH5_YRKBG5_&export=download",
+      "format": "ZIP",
+      "date": 1791598493317
+    },
+    {
+      "title": "michael-myers-bambu-stl3dbr",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1_x88qVwpJGmEy19v8tYQBOqyZD2pn1ET",
+      "link": "https://drive.google.com/uc?id=1QcPKl6FJpEbxjD6gj6tpCyxnn_39-bR6&export=download",
+      "format": "3MF",
+      "date": 1791565650629
+    },
+    {
+      "title": "Jason Voorhees",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=127mUBi3E-ZYJBzWU5dHFEF5kRuPcOpDc",
+      "link": "https://drive.google.com/uc?id=1RfQjFE6BXXKNEwJ9LGVjoGz_MPYw3a2l&export=download",
+      "format": "ZIP",
+      "date": 1791246248798
+    },
+    {
+      "title": "Freddy Krueger BAMBU (1)",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1X6pc3QDrab86gclVNiwVearwfMNbjyyH",
+      "link": "https://drive.google.com/uc?id=1mqVhdbiyS5zkaC0wSZ8jlo0NNqz9umbG&export=download",
+      "format": "3MF",
+      "date": 1791215081548
+    },
+    {
       "title": "BOMBARDINO CROCODILO",
       "category": "VEICULOS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=17cU8aQMB-9HpUTf0-39saAFUUHhY8brc",
@@ -7729,22 +7817,6 @@
       "date": 1793111685110
     },
     {
-      "title": "Vincent Vega",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1XfN51gFLOVImF4k0G21cJcuQqerAYuSO",
-      "link": "https://drive.google.com/uc?id=1wkgPHNY8u0O8cRoSuTgh4BqgTSdI3F-o&export=download",
-      "format": "ZIP",
-      "date": 1793111721203
-    },
-    {
-      "title": "Blade",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=15oaayDHQPkapNjfLhk6yKeqhIud54RJA",
-      "link": "https://drive.google.com/uc?id=1QARcYx4Yj85UuJgCXs0ocGhLX7X9_qpD&export=download",
-      "format": "ZIP",
-      "date": 1793111734686
-    },
-    {
       "title": "SpiderMan_3",
       "category": "ACTION FIGURE",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1HdM4CzmkflNBpGZ68uKoe_Wj2CJooyRe",
@@ -7951,14 +8023,6 @@
       "link": "https://drive.google.com/uc?id=1dfBGvi1DJ3xBzzk4-9zGQ27pUQYpiO--&export=download",
       "format": "RAR",
       "date": 1792955235972
-    },
-    {
-      "title": "Sam",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1EM5yx6PQEQlVHVHa1w_IitzaINczsQ8j",
-      "link": "https://drive.google.com/uc?id=1W9PlMc07HX5EjYSP6-mOgaG78XjIDShl&export=download",
-      "format": "ZIP",
-      "date": 1792955054782
     },
     {
       "title": "Grinch Shelby",
@@ -8217,14 +8281,6 @@
       "date": 1791814541987
     },
     {
-      "title": "Hannibal Lecter",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1wnd41QoBubcYB5ew76uZ2jk00k50VX0q",
-      "link": "https://drive.google.com/uc?id=14VWKit6dRyuQtkxPz1_V5q4eDsgIeY-D&export=download",
-      "format": "ZIP",
-      "date": 1792954921770
-    },
-    {
       "title": "Yuta Okkotsu - Jujutsu Kaisen Espadachim",
       "category": "ACTION FIGURE",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=18PDTkTspjRsoxEUMiSft47pm0srkm-dg",
@@ -8399,14 +8455,6 @@
       "link": "https://drive.google.com/uc?id=1RsNwklVu635aTqfuRQU94es0mpmud-CV&export=download",
       "format": "3MF",
       "date": 1792777589370
-    },
-    {
-      "title": "venom-urban-tinnik3d-stl3dbr",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1EXZ-7o2e3cW-ia5vulG4yJes_n9aqU4U",
-      "link": "https://drive.google.com/uc?id=1mxqwglOa0synUxlhTbUmbI-uqr1La9DK&export=download",
-      "format": "ZIP",
-      "date": 1792777608904
     },
     {
       "title": "Original - Bruxinha Mágica - Saia Preta 30cm",
@@ -8807,14 +8855,6 @@
       "link": "https://drive.google.com/uc?id=192atTjrReLWf-BZrXu8ODqJnBpIWPheD&export=download",
       "format": "RAR",
       "date": 1792496611622
-    },
-    {
-      "title": "CHUCKY",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1r4biY4ZVHQP3eOUWtMq2HKIworyQgY2U",
-      "link": "https://drive.google.com/uc?id=17TW-fe5a6xRlGpKKBEDisO8LZCaEAjka&export=download",
-      "format": "ZIP",
-      "date": 1792496665731
     },
     {
       "title": "Transformable+Frankenstein+for+Halloween",
@@ -9303,14 +9343,6 @@
       "link": "https://drive.google.com/uc?id=1PWSr4BYa9479izGJb7_AlIPvI3KG9akR&export=download",
       "format": "ZIP",
       "date": 1792106929797
-    },
-    {
-      "title": "Ghostface by tinnik3d",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1K3O697a8B47zvcrBozIU99beiUxa7fu7",
-      "link": "https://drive.google.com/uc?id=1PzbP-UL14MbaJmIxU6JwlKKsVXgzDbft&export=download",
-      "format": "ZIP",
-      "date": 1792100128673
     },
     {
       "title": "Daisy",
@@ -9857,14 +9889,6 @@
       "date": 1791598517428
     },
     {
-      "title": "leatherface-by-tinnik3d-stl3dbr",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1s_c9uW60NzTBzEXYDOPbzkn3ddkCFt7q",
-      "link": "https://drive.google.com/uc?id=1kWGyfD5SZBXSj1S16-bUorH5_YRKBG5_&export=download",
-      "format": "ZIP",
-      "date": 1791598493317
-    },
-    {
       "title": "Nlsinh - Penny Brawl Stars",
       "category": "ACTION FIGURE",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1l-g5p5wxFYyDH-5A2cWNOeBrUYh8KTDO",
@@ -9895,14 +9919,6 @@
       "link": "https://drive.google.com/uc?id=1QWQQLnzjfz6Qt_tBNKW2lFCxIkBlmNWc&export=download",
       "format": "ZIP",
       "date": 1791574481879
-    },
-    {
-      "title": "michael-myers-bambu-stl3dbr",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1_x88qVwpJGmEy19v8tYQBOqyZD2pn1ET",
-      "link": "https://drive.google.com/uc?id=1QcPKl6FJpEbxjD6gj6tpCyxnn_39-bR6&export=download",
-      "format": "3MF",
-      "date": 1791565650629
     },
     {
       "title": "minibobafett-bylayer-stls-stl3dbr",
@@ -10137,28 +10153,12 @@
       "date": 1791246242004
     },
     {
-      "title": "Jason Voorhees",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=127mUBi3E-ZYJBzWU5dHFEF5kRuPcOpDc",
-      "link": "https://drive.google.com/uc?id=1RfQjFE6BXXKNEwJ9LGVjoGz_MPYw3a2l&export=download",
-      "format": "ZIP",
-      "date": 1791246248798
-    },
-    {
       "title": "PRINCESA RAPUNZEL",
       "category": "ACTION FIGURE",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1904M13WipO6Xv0aU_hIQ4YEv00bjVETD",
       "link": "https://drive.google.com/uc?id=1Vce-I8RwO7jJxrmzkvCG_BPi7lQoRu2r&export=download",
       "format": "RAR",
       "date": 1791222167227
-    },
-    {
-      "title": "Freddy Krueger BAMBU (1)",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1X6pc3QDrab86gclVNiwVearwfMNbjyyH",
-      "link": "https://drive.google.com/uc?id=1mqVhdbiyS5zkaC0wSZ8jlo0NNqz9umbG&export=download",
-      "format": "3MF",
-      "date": 1791215081548
     },
     {
       "title": "hydra stomper",
@@ -11159,14 +11159,6 @@
       "link": "https://drive.google.com/uc?id=1EvMVbMFy15RkAZF5j4WgLvULca-3X3b6&export=download",
       "format": "3MF",
       "date": 1790550259165
-    },
-    {
-      "title": "Venom Urban Tinnik3D",
-      "category": "ACTION FIGURE",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=18Gh_xaJhT9CVJs-KH7kugsE0jTYw0RSE",
-      "link": "https://drive.google.com/uc?id=14JhW6HoT29dz6BCnFRjrw1hz9kzznV3r&export=download",
-      "format": "ZIP",
-      "date": 1790550148028
     },
     {
       "title": "Yusuke Urameshi",
