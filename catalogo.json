@@ -1,22 +1,6 @@
 {
   "catalog": [
     {
-      "title": "Vegeta Super Saiyajin",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1RyzP8Q8QBd_XwvhSbqpWdxWJPTkTmRJh",
-      "link": "https://drive.google.com/uc?id=1rdt1A3blZTby36yLdVYWky6CrQHP8-Qm&export=download",
-      "format": "3MF",
-      "date": 1794789468345
-    },
-    {
-      "title": "Sonic Ouriço com skate",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1MKnQ98Esyg5oSns8Ic0Y-FTe2joyJOKc",
-      "link": "https://drive.google.com/uc?id=1WbjAWx8P59GQd70DzNw1jpRTNmwaFgu-&export=download",
-      "format": "3MF",
-      "date": 1794789490166
-    },
-    {
       "title": "Western Bugs & Lola",
       "category": "COMPRAS EXCLUSIVAS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=150VLIVkC_hKmagm-ZzlJYBttUVP1IeVW",
@@ -6239,6 +6223,14 @@
       "link": "https://drive.google.com/uc?id=1G6TIB4zoNjaX1xMTr8Zau5Hv092sXbN7&export=download",
       "format": "ZIP",
       "date": 1788281022391
+    },
+    {
+      "title": "Nova Polar Bear - Beast Mode",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1mPYOSJySxNzqydFfPwk82VVRnknDhd4W",
+      "link": "https://drive.google.com/uc?id=1BOtUgbmjhc4v9NssugpInorzmWC06oVw&export=download",
+      "format": "3MF",
+      "date": 1794789813291
     },
     {
       "title": "The_HillBilly_Bears_BaseDiorama_STL",
