@@ -1,6 +1,46 @@
 {
   "catalog": [
     {
+      "title": "DAFFY DUCK URBAN — CHRISTMAS EDITION",
+      "category": "Pasta sem nome",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1srZYq5GnIA0-khO1R-jsM_4HQAWocdK8",
+      "link": "https://drive.google.com/uc?id=18xU1kOdliipO0UXjZvep2Epfv-jYKUdn&export=download",
+      "format": "ZIP",
+      "date": 1794874809853
+    },
+    {
+      "title": "SONIC.EXE - URBAN PHANTOM — HORROR EDITION",
+      "category": "Pasta sem nome",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1ydJreM6OBnDDpqVTnYlPGUAc3a80O3he",
+      "link": "https://drive.google.com/uc?id=1SIxsgLwCCQThA7NsPjpas4-oR_sZ5xfT&export=download",
+      "format": "ZIP",
+      "date": 1794874830786
+    },
+    {
+      "title": "JERRY MOUSE – GRAFFITI EDITION",
+      "category": "Pasta sem nome",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1pkW_oNEwsbTNtu3CN7cMgJYeGBT8ixHI",
+      "link": "https://drive.google.com/uc?id=13gmujTv_fUZW4ttfywJMvbsdmgLhI11N&export=download",
+      "format": "ZIP",
+      "date": 1794874788409
+    },
+    {
+      "title": "DONALD DUCK URBAN — EDIÇÃO GRAFFITI",
+      "category": "Pasta sem nome",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1tHGshuEk00wJ1ie74axKKFRi6987CAHI",
+      "link": "https://drive.google.com/uc?id=1hTdWXRSUdplXSYYtrAUv5tlZx6GUyYVs&export=download",
+      "format": "ZIP",
+      "date": 1794874796950
+    },
+    {
+      "title": "BUGS BUNNY - URBAN CHRISTMAS EDITION",
+      "category": "Pasta sem nome",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1b7qFomc4YeZw9XkC2vHuOOzSegZu9LuF",
+      "link": "https://drive.google.com/uc?id=1sh3KLIaFNNIjcHcB-Dp7pNw67JX3ZO5H&export=download",
+      "format": "ZIP",
+      "date": 1794874774517
+    },
+    {
       "title": "HARRY_NOEL_MULTIPARTS_16112026_172835",
       "category": "COMPRAS EXCLUSIVAS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1PCkXTLIfiYglfJOJY9MMWRtTP0a-FmrZ",
@@ -19281,6 +19321,54 @@
       "date": 1788280377138
     },
     {
+      "title": "DAFFY DUCK URBAN — CHRISTMAS EDITION",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1srZYq5GnIA0-khO1R-jsM_4HQAWocdK8",
+      "link": "https://drive.google.com/uc?id=18xU1kOdliipO0UXjZvep2Epfv-jYKUdn&export=download",
+      "format": "ZIP",
+      "date": 1794874809853
+    },
+    {
+      "title": "TOM CAT – GRAFFITI EDITION",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1z-xCzhVpL0rebiI2onfLnP_OGA2inZb1",
+      "link": "https://drive.google.com/uc?id=1cIv-MNKGe-H5eqbMzDpWnWidIBGmSsud&export=download",
+      "format": "ZIP",
+      "date": 1794874860379
+    },
+    {
+      "title": "MICKEY – COWBOY EDITION – WILD WEST COLLECTION",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1WOmOfHk2mna6tE-TAbYcYvB0R-N_lu0o",
+      "link": "https://drive.google.com/uc?id=1-9Wj1HnCD85FCI-rHGxa0XnuoWHrF5rA&export=download",
+      "format": "ZIP",
+      "date": 1794874843637
+    },
+    {
+      "title": "JERRY MOUSE – GRAFFITI EDITION",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1pkW_oNEwsbTNtu3CN7cMgJYeGBT8ixHI",
+      "link": "https://drive.google.com/uc?id=13gmujTv_fUZW4ttfywJMvbsdmgLhI11N&export=download",
+      "format": "ZIP",
+      "date": 1794874788409
+    },
+    {
+      "title": "DONALD DUCK URBAN — EDIÇÃO GRAFFITI",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1tHGshuEk00wJ1ie74axKKFRi6987CAHI",
+      "link": "https://drive.google.com/uc?id=1hTdWXRSUdplXSYYtrAUv5tlZx6GUyYVs&export=download",
+      "format": "ZIP",
+      "date": 1794874796950
+    },
+    {
+      "title": "BUGS BUNNY - URBAN CHRISTMAS EDITION",
+      "category": "LOONEY_TUNES",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1b7qFomc4YeZw9XkC2vHuOOzSegZu9LuF",
+      "link": "https://drive.google.com/uc?id=1sh3KLIaFNNIjcHcB-Dp7pNw67JX3ZO5H&export=download",
+      "format": "ZIP",
+      "date": 1794874774517
+    },
+    {
       "title": "Bugs and lola",
       "category": "LOONEY_TUNES",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1nGGveMdXGGh8Jpebo9xpcj-SI3OBa6QM",
@@ -30247,6 +30335,14 @@
       "link": "https://drive.google.com/uc?id=1LcR7Ii5eE11mhXap1ghC6Z19cap7a3Sx&export=download",
       "format": "3MF",
       "date": 1788386873575
+    },
+    {
+      "title": "SONIC.EXE - URBAN PHANTOM — HORROR EDITION",
+      "category": "SONIC",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1ydJreM6OBnDDpqVTnYlPGUAc3a80O3he",
+      "link": "https://drive.google.com/uc?id=1SIxsgLwCCQThA7NsPjpas4-oR_sZ5xfT&export=download",
+      "format": "ZIP",
+      "date": 1794874830786
     },
     {
       "title": "Sonic Ouriço com skate",
