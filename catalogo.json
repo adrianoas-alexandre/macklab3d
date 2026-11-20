@@ -1,78 +1,6 @@
 {
   "catalog": [
     {
-      "title": "Snoop Clous",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1GLrNvoF2o7tKQthmRo-69ljvxwFzyQ1e",
-      "link": "https://drive.google.com/uc?id=1SLnjzZN-StqUDYRJRfgm9eB7wC62OqF-&export=download",
-      "format": "ZIP",
-      "date": 1795180602120
-    },
-    {
-      "title": "Jiraiya 34,5cm",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1krM_g8psjBFzDSuzqFWf-O7CO8EsNug-",
-      "link": "https://drive.google.com/uc?id=11Hp8IgRouMmFiZNElT0XDLLXqgenSrSt&export=download",
-      "format": "ZIP",
-      "date": 1795180640356
-    },
-    {
-      "title": "Tiffany - Bride of Chucky Edition",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1tp3hoy53ojZp2CtSo7K-2w_J7_vtIHJP",
-      "link": "https://drive.google.com/uc?id=1_mL1QFSKFwuLL2Xwfx_8_FfBZiYFHzfK&export=download",
-      "format": "ZIP",
-      "date": 1795180624030
-    },
-    {
-      "title": "The Virgin Mary - Knitted Version",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1F1BsQaHKS3cuwKK4LFHIgLHL9xRxOF3w",
-      "link": "https://drive.google.com/uc?id=1sDFtgJNAbpEVH9-uNAM7WeS1XaX9l7uY&export=download",
-      "format": "3MF",
-      "date": 1795180647109
-    },
-    {
-      "title": "Viking Warrior",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1B1oBsUswW0cJHEBJnw02eZTkO9L4Yh_L",
-      "link": "https://drive.google.com/uc?id=14kByAJenV0bH1fnErU3bRNdVRXk-qzsI&export=download",
-      "format": "ZIP",
-      "date": 1795180651340
-    },
-    {
-      "title": "Dark Jader - Regular",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=14MuxpJaAOxXP_VE2ZtOe_rZXXFelOlq1",
-      "link": "https://drive.google.com/uc?id=1m5dqQfB4Q_6dDxMqLqVzaI-QdPJiMoqr&export=download",
-      "format": "3MF",
-      "date": 1795180609303
-    },
-    {
-      "title": "THOR Multipart No-AMS",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1qV3LagwhQmJbdmt7AZTDnhKlvVN1Om1o",
-      "link": "https://drive.google.com/uc?id=1vuA2sx-MvwKCy5YDUhL0fZJ4Pj_EZIXw&export=download",
-      "format": "ZIP",
-      "date": 1795180658347
-    },
-    {
-      "title": "LA3Design - GTA6 - Lucia Caminos",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1gt0plzlqwS51Kk3G0dObwSRnGKoW3Jrw",
-      "link": "https://drive.google.com/uc?id=1kY2Ixg9xPXLAEgZdixkB0N93zzJuLS4G&export=download",
-      "format": "RAR",
-      "date": 1795180688922
-    },
-    {
-      "title": "Highland",
-      "category": "Pasta sem nome",
-      "image": "https://drive.google.com/thumbnail?sz=w600&id=1ZYDLJ3s_CSWuGEZaQS3_zbKebcfxseSY",
-      "link": "https://drive.google.com/uc?id=11IAp2dSohYw-NbgvL7jvK-BAFhP2C7JC&export=download",
-      "format": "3MF",
-      "date": 1795180693243
-    },
-    {
       "title": "GTA_IV_16112026_211636",
       "category": "COMPRAS EXCLUSIVAS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1KpzswxlqWzsMkYskT8pYkcQfQlhA1wYX",
@@ -223,6 +151,14 @@
       "link": "https://drive.google.com/uc?id=1f61lnZqlOB4l46ehLSrUPb-j38Xb93H6&export=download",
       "format": "3MF",
       "date": 1789570744584
+    },
+    {
+      "title": "Snoop Clous",
+      "category": "EXCLUSIVO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1GLrNvoF2o7tKQthmRo-69ljvxwFzyQ1e",
+      "link": "https://drive.google.com/uc?id=1SLnjzZN-StqUDYRJRfgm9eB7wC62OqF-&export=download",
+      "format": "ZIP",
+      "date": 1795180602120
     },
     {
       "title": "Lendas do Cinema - Logdok",
@@ -599,6 +535,14 @@
       "link": "https://drive.google.com/uc?id=1Xy-Il-p19Db-63OyLgIOlhi0JF-0vwtq&export=download",
       "format": "ZIP",
       "date": 1788283691097
+    },
+    {
+      "title": "Top Gun - Maverick",
+      "category": "VEICULOS",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1M8FX_-64FEL7np6xoIEbwhUtOFDuFVF1",
+      "link": "https://drive.google.com/uc?id=1z7ojFBjQaFGYeXF_GBOGdF2aQu4RQssg&export=download",
+      "format": "RAR",
+      "date": 1795181091912
     },
     {
       "title": "BOMBARDINO CROCODILO",
@@ -6543,6 +6487,46 @@
       "link": "https://drive.google.com/uc?id=1G6TIB4zoNjaX1xMTr8Zau5Hv092sXbN7&export=download",
       "format": "ZIP",
       "date": 1788281022391
+    },
+    {
+      "title": "Tiffany - Bride of Chucky Edition",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1tp3hoy53ojZp2CtSo7K-2w_J7_vtIHJP",
+      "link": "https://drive.google.com/uc?id=1_mL1QFSKFwuLL2Xwfx_8_FfBZiYFHzfK&export=download",
+      "format": "ZIP",
+      "date": 1795180624030
+    },
+    {
+      "title": "Viking Warrior",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1B1oBsUswW0cJHEBJnw02eZTkO9L4Yh_L",
+      "link": "https://drive.google.com/uc?id=14kByAJenV0bH1fnErU3bRNdVRXk-qzsI&export=download",
+      "format": "ZIP",
+      "date": 1795180651340
+    },
+    {
+      "title": "THOR Multipart No-AMS",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1qV3LagwhQmJbdmt7AZTDnhKlvVN1Om1o",
+      "link": "https://drive.google.com/uc?id=1vuA2sx-MvwKCy5YDUhL0fZJ4Pj_EZIXw&export=download",
+      "format": "ZIP",
+      "date": 1795180658347
+    },
+    {
+      "title": "LA3Design - GTA6 - Lucia Caminos",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1gt0plzlqwS51Kk3G0dObwSRnGKoW3Jrw",
+      "link": "https://drive.google.com/uc?id=1kY2Ixg9xPXLAEgZdixkB0N93zzJuLS4G&export=download",
+      "format": "RAR",
+      "date": 1795180688922
+    },
+    {
+      "title": "Highland",
+      "category": "ACTION FIGURE",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1ZYDLJ3s_CSWuGEZaQS3_zbKebcfxseSY",
+      "link": "https://drive.google.com/uc?id=11IAp2dSohYw-NbgvL7jvK-BAFhP2C7JC&export=download",
+      "format": "3MF",
+      "date": 1795180693243
     },
     {
       "title": "Leoncio_bolinha",
@@ -14985,6 +14969,14 @@
       "date": 1788287052710
     },
     {
+      "title": "Dark Jader - Regular",
+      "category": "STAR WARS",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=14MuxpJaAOxXP_VE2ZtOe_rZXXFelOlq1",
+      "link": "https://drive.google.com/uc?id=1m5dqQfB4Q_6dDxMqLqVzaI-QdPJiMoqr&export=download",
+      "format": "3MF",
+      "date": 1795180609303
+    },
+    {
       "title": "Mando Card",
       "category": "STAR WARS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=164Am98DCnEQIuGd76Xi6Yoz2cEfF8iOZ",
@@ -16665,6 +16657,14 @@
       "date": 1788280513909
     },
     {
+      "title": "The Virgin Mary - Knitted Version",
+      "category": "ITENS RELIGIOSOS",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1F1BsQaHKS3cuwKK4LFHIgLHL9xRxOF3w",
+      "link": "https://drive.google.com/uc?id=1sDFtgJNAbpEVH9-uNAM7WeS1XaX9l7uY&export=download",
+      "format": "3MF",
+      "date": 1795180647109
+    },
+    {
       "title": "Capelinha Completa",
       "category": "ITENS RELIGIOSOS",
       "image": "https://drive.google.com/thumbnail?sz=w600&id=1eUcIWaYO5GmLkZWpPB7z2sOLtQs-93C8",
@@ -18263,6 +18263,14 @@
       "link": "https://drive.google.com/uc?id=1kKclDpuVBbzBDV2qb7S94Mv9-yKXYVga&export=download",
       "format": "ZIP",
       "date": 1788286504347
+    },
+    {
+      "title": "Jiraiya 34,5cm",
+      "category": "NARUTO",
+      "image": "https://drive.google.com/thumbnail?sz=w600&id=1krM_g8psjBFzDSuzqFWf-O7CO8EsNug-",
+      "link": "https://drive.google.com/uc?id=11Hp8IgRouMmFiZNElT0XDLLXqgenSrSt&export=download",
+      "format": "ZIP",
+      "date": 1795180640356
     },
     {
       "title": "Pain",
